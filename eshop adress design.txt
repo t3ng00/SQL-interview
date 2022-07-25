@@ -1,0 +1,6 @@
+We have two scenarios: if we have eshop targeted on domestic market we will comply with PAS(Post adressing system) which is used in our country. For Slovakia we can find it here:
+https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/svkEn.pdf. Since slovakian addressing system is relatively simple we can store an address within the main table with customer information. it will contain such attributes as: street name, street number, premise number, postcode, city. E.g.:
+Hrnčiarska 28, č. p. 8
+960 01 ZVOLEN
+if we are providing services for private companies we may add an attribute of an organization name.
+Second scenario will be international market. Due to the fact that PAS can differ drastically from country to country the effective way for storing information will be creating different values for each customer table depending on the countries the've selected, other solutions could include creating integer value in customer information table that stores adress_id value for another table that includes adresses of all customers or creating a table for each country with information provided there. So in conclusion ideal scenario would be creating a system that includes PAS of all UPU member countries, which can be found here: https://bit.ly/3PWd2Mb
