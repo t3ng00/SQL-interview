@@ -1,6 +1,6 @@
 /*I'm creating a database which will store info on classes and scores of our 5 students */
 CREATE DATABASE exams
-USE exams
+USE exams;
 /*I,m creating a table within a database for storing students scores*/
 CREATE TABLE students_scores(
 	student_id INT,
