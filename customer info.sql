@@ -11,8 +11,8 @@ CREATE TABLE client_info(
 	/*although prefered color and brand may seem not important for client,
 	it could be crucial for marketing statistics and showing relevant results immediately after registration, 
 	so we may want customer to provide these as soon as possible*/
-	customer_prefbrand TEXT;
-	customer prefcolor TEXT;
+	customer_prefbrand TEXT,
+	customer prefcolor TEXT,
 	/* and after all we can ask customer to provide id*/
-	customer_rc TEXT;
-)
+	customer_rc TEXT,
+);
